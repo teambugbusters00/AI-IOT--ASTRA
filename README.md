@@ -1,4 +1,18 @@
-# React + Vite
+
+### Frontend (somethingaiiot/)
+- **Framework**: React 18 with Vite
+- **Routing**: React Router
+- **Styling**: Tailwind CSS with custom components
+- **State Management**: React Context (Theme)
+- **UI Library**: Custom components with animations
+
+### Unified Backend (backend/)
+- **Framework**: FastAPI
+- **AI Model**: Microsoft Phi-2 (via Transformers)
+- **Dataset**: Open Schematics from HuggingFace
+- **Features**: Authentication, dashboard data, device simulation, AI code generation
+- **Database**: JSON file persistence
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

@@ -1,0 +1,6 @@
+{
+  "test@example.com": {
+    "name": "Test User",
+    "password": "$2b$12$mfH43WqK0FGAAkBP6KKEpOy05zi3UhOOe2M/Sa1NLEVXakxiDsgjC"
+  }
+}

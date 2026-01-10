@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: ai-iot-backend
+    runtime: python3
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+  - type: web
+    name: ai-iot-frontend
+    runtime: static
+    rootDir: somethingaiiot
+    buildCommand: npm install && npm run build
+    staticPublishDir: dist

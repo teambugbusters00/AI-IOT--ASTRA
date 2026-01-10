@@ -18,12 +18,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(auth_router)
-app.include_router(dashboard_router)
-app.include_router(device_router)
-app.include_router(ai_router)
+app.include_router(auth_router, prefix="/api")
+app.include_router(dashboard_router, prefix="/api")
+app.include_router(device_router, prefix="/api")
+app.include_router(ai_router, prefix="/api")
 
-@app.get("/")
+@app.get("/api/")
 def root():
     return {"status": "Backend running"}
 
@@ -32,4 +32,6 @@ async def startup_event():
     print("Items:")
     for route in app.routes:
         print(f"Path: {route.path} Name: {route.name}")
+# Mount static files from the frontend build directory
+app.mount("/", StaticFiles(directory="../somethingaiiot/dist", html=True), name="static")
 

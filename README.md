@@ -1,4 +1,4 @@
-
+VIDEO  = {  ]
 ### Frontend (somethingaiiot/)
 - **Framework**: React 18 with Vite
 - **Routing**: React Router
